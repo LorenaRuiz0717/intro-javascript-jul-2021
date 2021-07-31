@@ -24,8 +24,25 @@ Diana
 Camilo
 ```
 
-Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-18-js-julio/4073).
+Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-18-js-julio/4073).//OK
+Respuesta
+```
+let names=['Pedro','Pablo','Maria','Juan','Diana']
 
+let addName=prompt('Ingrese su nombre')
+
+names.push(addName)
+
+console.log(names)
+
+let addName1=prompt('Ingrese otro nombre')
+names[2]=addName1
+
+for(let i=0;i<names.length;i++){
+
+console.log(names[i])
+}
+```
 ## Ejercicio 19
 
 Escribe un programa que:
