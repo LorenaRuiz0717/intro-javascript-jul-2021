@@ -31,7 +31,7 @@ let names=['Pedro','Pablo','Maria','Juan','Diana']
 
 let addName=prompt('Ingrese su nombre')
 
-names.push(addName)
+names.push(addName)//añade elementos al array
 
 console.log(names)
 
@@ -63,7 +63,25 @@ Ingresa un número> 5
 
 **Nota:** los 3 pasos de este ejercicio se deben realizar con programación según lo visto en clase.
 
-Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-19-js-julio/4074).
+Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-19-js-julio/4074).//OK
+
+Respuesta
+```
+let num=parseInt(prompt('Ingrese un numero'));
+let conteo=[]
+for(let i=0;i<num;i++){
+ conteo.push(i+1)
+}
+// console.log(conteo)
+conteo.splice(1,2)    //array.splice(start[, deleteCount[, item1[, item2[, ...]]]])
+//Opcion
+// for(let i=0;i<conteo.length;i++){
+//   console.log(conteo[i])
+}
+//Opcion
+for (num of conteo)(console.log(conteo)) //for/of : recorre los valores de un objeto iterable
+```
+
 
 ## Ejercicio 20
 
@@ -95,8 +113,22 @@ Grupo 3:
 **Nota 1:** utiliza ciclos anidados para solucionar este ejercicio
 **Nota 2:** agrega dos espacios al principio de cada nombre
 
-Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-20-js-julio/4076).
+Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-20-js-julio/4076).//OK
 
+Respuesta
+
+```
+const mat = [["Pablo", "Maria", "Pedro"],
+  ["Diana", "Juan", "Federico"],
+  ["Roberto", "Daniel", "Sandra"]
+];
+for(let i=0;i<mat.length;i++){      // ciclos anidados
+  console.log('Grupo'+[i+1]+':');
+  for(let j=0;j<mat.length;j++){
+    console.log('  '+ mat[i][j])
+  }
+}
+```
 ## Ejercicio 21
 
 Completa el siguiente programa para imprimir los números que sean mayores a 10.
@@ -119,8 +151,17 @@ El resultado debería ser el siguiente:
 
 **Nota:** este ejercicio lo debes hacer con ciclos y sin ayuda de la función `filter` de JavaScript. Al terminarlo cambia el arreglo original para verificar que funcione con otros números.
 
-Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-21-js-julio/4075).
+Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-21-js-julio/4075).//OK
 
+Respuesta
+
+```
+const nums = [1, 23, 5, 8, 40, 12, 2, 67, 24, 9, 39]
+for(let i=0;i<nums.length;i++){
+ if(nums[i]>=10)
+  console.log(nums[i])
+}
+```
 ## Ejercicio 22
 
 Completa el siguiente programa e imprime la cantidad de unos (1) que haya en el arreglo:
@@ -137,4 +178,15 @@ El resultado debería ser el siguiente:
 
 **Nota:** este ejercicio lo debes hacer con ciclos y sin ayuda de la función `filter` de JavaScript. Al terminarlo, cambia el arreglo original para verificar que funcione con otras combinaciones de ceros y unos.
 
-Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-22-js-julio/4077).
+Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-22-js-julio/4077).//OK
+
+Respuesta
+
+const nums = [1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 0, 1, 1]
+let conteo=0
+for (let i=0;i<nums.length;i++){
+  if(nums[i]==1){
+  conteo=conteo+1
+  }
+ }
+  console.log(conteo)
