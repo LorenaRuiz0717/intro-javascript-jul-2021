@@ -8,7 +8,13 @@ Escribe un programa que le pida al usuario ingresar una frase y la imprima en la
 
 Recuerda que para pedirle al usuario que escriba una frase debes utilizar el método `prompt()` y para escribir en la consola debes utilizar el método `console.log()`.
 
-Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-1-js-julio/3346).
+Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-1-js-julio/3346).//OK
+
+REPUESTA
+```
+let message=prompt(‘Ingresa tu mensaje’)
+console.log(message)
+```
 
 ## Ejercicio 2
 
@@ -16,13 +22,28 @@ Escribe un programa que le pregunte al usuario su nombre e imprima "Hola " segui
 
 Por ejemplo, si el usuario ingresa "Pedro" el programa debe imprimir en la consola "Hola Pedro!".
 
-Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-2-js-julio/3347)
+Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-2-js-julio/3347)//OK
+
+RESPUESTA
+ 
+ ```
+ let nombre=prompt(’¿Como te llamas?’);
+ console.log( Hola ${nombre} ! )
+```
 
 ## Ejercicio 3
 
 Escribe un programa que le pida al usuario ingresar un número, luego le pide un segundo número, e imprima en la consola la suma de los dos números que ingresó el usuario.
 
-Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-3-js-julio/3348)
+Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-3-js-julio/3348)//OK
+
+RESPUESTA
+
+```
+let number1=parseInt(prompt(‘Ingresa el primer digito a sumar’));
+let number2=parseInt(prompt(‘Ingresa el segundo digito a sumar’)); 
+let sum= number1+number2 console.log( El resultado de la suma es ${sum} )
+```
 
 ## Ejercicio 4
 
@@ -32,7 +53,19 @@ Escribe un programa que le pida al usuario su año de nacimiento e imprima su ed
 Tienes 20 años
 ```
 
-Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-4-js-julio/3349)
+Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-4-js-julio/3349)//OK
+
+RESPUESTA
+
+```
+let userYear=parseInt(prompt(‘Cual es tu ano de nacimiento’))
+let year=new Date().getFullYear()
+let age=year-userYear 
+if(year > userYear & & userYear > 1900){ 
+console.log( Tu edad actual es ${age} anos )
+}else{
+console.log(‘Verifica el ano ingresado’)}
+```
 
 ## Ejercicio 5
 
@@ -48,4 +81,15 @@ Escribe un programa que le pida al usuario su peso y su altura para calcular su 
 
 Por ejemplo, si el usuario ingresa 65 de peso y 1.8 de altura el programa debe imprimir en la consola la frase "Tu BMI es 20.061728395061728".
 
-Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-5-js-julio/3350)
+Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-5-js-julio/3350)//OK
+
+RESPUESTA
+
+```
+let peso = parseFloat(prompt(‘Ingresa tu peso en kilos’)) 
+let altura = parseFloat(prompt(‘Ingresa tu altura en metros’)) 
+let masaCorporal =peso/(altura*altura) 
+console.log( Tu BMI es ${masaCorporal} )
+```
+
+
