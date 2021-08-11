@@ -15,7 +15,15 @@ console.log(suma(0, 0)) // 0
 console.log(suma(245, 923)) // 1168
 ```
 
-Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-29-js-julio/4135). No incluyas el código de prueba.
+Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-29-js-julio/4135). No incluyas el código de prueba.//OK
+
+RESPUESTA
+
+```
+function suma(a,b){
+  return a+b
+}
+```
 
 ## Ejercicio 30
 
@@ -30,7 +38,16 @@ console.log(hola("Juan")) // "Hola Juan!"
 console.log(hola("")) // "Hola !"
 ```
 
-Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-30-js-julio/4136). No incluyas el código de prueba.
+Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-30-js-julio/4136). No incluyas el código de prueba.//OK
+
+RESPUESTA
+
+```
+function print(name){
+  let hello='Hola '
+return(hello+name+ '!')
+}
+```
 
 ## Ejercicio 31
 
@@ -51,7 +68,16 @@ console.log(bmi(72, 1.6)) // 28.124999999999993
 console.log(bmi(52, 1.75)) //  16.979591836734695
 ```
 
-Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-31-js-julio/4137). No incluyas el código de prueba.
+Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-31-js-julio/4137). No incluyas el código de prueba.//OK
+
+RESPUESTA
+
+```
+function bmi(peso,altura){
+  let alturaPotencia=altura*altura
+  return peso/(alturaPotencia)
+}
+```
 
 ## Ejercicio 32
 
@@ -62,31 +88,26 @@ La función `calcularColor` recibe un número como argumento y retorna un string
 * Si el número es 3 retorna "El color es azul".
 * De lo contrario retorna "El color es verde".
 
-El problema es que la función tiene algunos errores y no está funcionando. Tu misión es corregirla para que funcione correctamente según lo anterior.
+Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-32-js-julio/4138). No incluyas el código de prueba.//OK
 
-```javascript
-function calcuarColor() {
+RESPUESTA
+
+```
+function calcularColor(num) {
+  let color=''
   if (num === 1) {
-    let color = "black";
-  } else (num = 2) {
-    let color = "blanco":
+    color = "black";
+  } else if (num ===2) {
+    color = "blanco";
   } else if (num === 3) {
-    let color = "rojo";
+    color = "rojo";
   } else {
-    let color = "verde";
+    color = "verde";
   }
 
   return "El color es " + color;
 }
-
-// código de prueba
-console.log(calcularColor(1)) // "El color es negro"
-console.log(calcularColor(2)) // "El color es blanco"
-console.log(calcularColor(3)) // "El color es azul"
-console.log(calcularColor(8)) // "El color es verde"
 ```
-
-Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-32-js-julio/4138). No incluyas el código de prueba.
 
 ## Ejercicio 33
 
@@ -102,7 +123,21 @@ console.log(capitalizar("pedro perez")) // "Pedro Perez"
 console.log(capitalizar("make it real")) // "Make it Real"
 ```
 
-Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-33-js-julio/4139). No incluyas el código de prueba.
+Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-33-js-julio/4139). No incluyas el código de prueba.//OK
+
+RESPUESTA
+
+```
+function capitalizar(frase){
+frase=frase.split(" ")  
+for(let i=0;i<frase.length;i++){
+   frase[i]=frase[i].charAt(0).toUpperCase()+frase[i].slice(1)
+}
+frase=frase.join(" ")
+return frase
+}
+
+```
 
 ## Ejercicio 34
 
@@ -117,4 +152,18 @@ console.log(promedio([7, 8, 9])) // 8
 console.log(promedio([300, 100])) // 200
 ```
 
-Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-34-js-julio/4140). No incluyas el código de prueba.
+Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-34-js-julio/4140). No incluyas el código de prueba.//OK
+
+RESPUESTA
+
+```
+const promedio=(arraynums)=>{
+  let promedio=0
+  // console.log(arraynums)
+ for (let i=0;i<arraynums.length;i++){
+  promedio+=arraynums[i]/arraynums.length
+   }
+ return promedio
+
+}
+```
