@@ -28,7 +28,25 @@ hobbies: ["programar", "squash", "piano"]
 estatura: 1.8
 ```
 
-Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-35-js-julio/4154).
+Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-35-js-julio/4154).//OK
+
+RESPUESTA 
+
+```
+let pedro={
+  'Nombre':'Pedro Perez', 'Edad':'32',
+ 'Activo':'true',
+ 'Hobbies':['programar','squash','piano']
+ }
+console.log(pedro.
+Edad);
+pedro.Estatura='1.8';
+delete pedro.Activo;
+for ( key in pedro){
+  console.log(key+': '+pedro[key])
+}
+
+```
 
 ## Ejercicio 36
 
@@ -50,7 +68,17 @@ console.log(saludar(juan)); // "Hola Juan"
 
 El objeto siempre tendrá la llave `nombre`. La llave `edad` es opcional y cuando no está presente deberás omitir la parte ", tienes x años".
 
-Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-36-js-julio/4155).
+Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-36-js-julio/4155).//OK
+
+RESPUESTA
+
+```
+function saludar(user){
+return  user.Edad? 
+  'Hola '+user.Nombre+', tienes '+user.Edad + ' años de edad':
+  'Hola '+user.Nombre 
+}
+```
 
 ## Ejercicio 37
 
@@ -75,7 +103,20 @@ productos = [
 console.log(buscarProducto(productos, 566)); // null
 ```
 
-Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-37-js-julio/4156).
+Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-37-js-julio/4156).//OK
+
+RESPUESTA
+
+```
+function buscarProducto(array,num){
+   for( item in array){
+     if(array[item].id===num){
+     return(array[item])
+     }
+   }
+  return null;
+}
+```
 
 ## Ejercicio 38
 
@@ -90,7 +131,18 @@ console.log(descifrar("pyrmizo", { y: "e", z: s })); // "permiso"
 console.log(descifrar("igual", { h: "n" })); // "igual"
 ```
 
-Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-38-js-julio/4157).
+Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-38-js-julio/4157).//OK
+
+RESPUESTA
+
+```
+const descifrar=(frase,objeto)=>{
+  for (let item in objeto){
+    frase=frase.replaceAll(item,objeto[item])
+  }
+  return frase
+}
+```
 
 ## Ejercicio 39
 
@@ -107,7 +159,24 @@ console.log(frecuencias("anita lava la tina"));
 // { a: 6, n: 2, i: 2, t: 2, l: 2, v: 1 }
 ```
 
-Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-39-js-julio/4158).
+Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-39-js-julio/4158).//OK
+
+RESPUESTA
+
+```
+function frecuencia(string){
+  let conteo={}
+  string=string.replace(' ','');
+for (letra of  string){
+  if(conteo[letra]){
+    conteo[letra]++
+  }else{
+    conteo[letra]=1
+  }
+}
+  return conteo
+}
+```
 
 ## Ejercicio 40
 
@@ -124,4 +193,13 @@ Crea una variable llamada `persona` de tipo objeto literal con las siguientes pr
 console.log(persona.bmi()); // 20.061728395061728
 ```
 
-Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-40-js-julio/4159).
+Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-40-js-julio/4159).//OK
+
+RESPUESTA
+
+```
+const persona={peso:65,estatura:1.8,
+bmi:function(){
+  return persona.peso/(Math.pow(persona.estatura,2))
+}}
+```
