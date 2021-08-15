@@ -25,7 +25,17 @@ Juan
 12.34
 ```
 
-Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-41-js-julio/4167).
+Comparte tu respuesta [en este enlace](https://foro.makeitreal.camp/t/respuestas-ejercicio-41-js-julio/4167).//OK
+
+RESULTADO
+
+```
+const arr = [45, "Hola", 82, 2, 67, true, "Juan", 12.34]
+
+arr.forEach(resu
+  console.log(result)
+})
+``` 
 
 ## Ejercicio 42
 
